@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "Darth Vader",
+            "price": "50",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
+            "id": 1
+        },
+        {
+            "name": "Flash",
+            "price": "25",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
+            "id": 2
+        },
+        {
+            "name": "Batman",
+            "price": "60",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
+            "id": 3
+        }
+    ]
+}

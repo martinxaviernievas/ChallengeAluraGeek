@@ -1,0 +1,104 @@
+/* Manteniendo los estilos previos */
+.products-container::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.card {
+    background-color: blueviolet;
+    color: white;
+    width: calc(100% / 4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nuevos estilos para el header */
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Disposición principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para la sección de agregar productos */
+.add-product-section {
+    width: 35%;
+}
+
+/* Estilos mejorados para el formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Press Start 2P', cursive; /* Asegúrate de incluir la fuente en tu HTML */
+}
+
+.form-container input {
+    padding: 15px;
+    border: 2px solid #0033cc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-container input::placeholder {
+    color: #0033cc;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.form-container input:focus {
+    border-color: #0066ff;
+}
+
+/* Estilos mejorados para los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-submit, .button-clear {
+    padding: 15px 30px;
+    border: 2px solid #0033cc;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.button-submit {
+    background-color: #0033cc;
+    color: white;
+}
+
+.button-submit:hover {
+    background-color: #0022aa;
+}
+
+.button-clear {
+    background-color: white;
+    color: #0033cc;
+}
+
+.button-clear:hover {
+    background-color: #e6e6e6;
+}
