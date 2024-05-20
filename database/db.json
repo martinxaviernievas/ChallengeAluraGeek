@@ -1,22 +1,40 @@
 {
-    "products": [
-        {
-            "name": "Darth Vader",
-            "price": "50",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
-            "id": 1
-        },
-        {
-            "name": "Flash",
-            "price": "25",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
-            "id": 2
-        },
-        {
-            "name": "Batman",
-            "price": "60",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPI2qtV85wMgmGsDpMZqq4n5UKSSc3QBw4Q&s",
-            "id": 3
-        }
-    ]
+  "products": [
+    {
+      "id": "5",
+      "name": "Cobb",
+      "price": "10",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_843332-MLA50308132997_062022-O.webp"
+    },
+    {
+      "id": "\"6\"",
+      "name": "Darth Vader",
+      "price": "20",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_825959-MLA53453966429_012023-O.webp"
+    },
+    {
+      "id": "\"NaN\"",
+      "name": "Luke",
+      "price": "23",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_919288-MLU74088440849_012024-O.webp"
+    },
+    {
+      "id": "\"NaN\"",
+      "name": "Obi Wan",
+      "price": "25",
+      "image": "https://acdn.mitiendanube.com/stores/003/029/560/products/funko-pop-star-wars-obi-wan-kenobi-2701-1e1acf211b273e90bd16827176306926-640-0.jpg"
+    },
+    {
+      "id": "\"NaN\"",
+      "name": "Rey",
+      "price": "30",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_642590-MLA48086301356_112021-O.webp"
+    },
+    {
+      "id": "\"NaN\"",
+      "name": "Han Solo",
+      "price": "15",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_977487-MLA49193911123_022022-O.webp"
+    }
+  ]
 }

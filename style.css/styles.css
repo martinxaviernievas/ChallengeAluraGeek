@@ -3,21 +3,84 @@
     background-color: white;
 }
 
+/* Añadir estilos para la disposición de productos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Estilo de cada tarjeta de producto */
 .card {
     background-color: blueviolet;
     color: white;
-    width: calc(100% / 4);
-    padding: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* Tres tarjetas por fila */
+    max-width: calc(33.333% - 20px);
+    min-width: 200px; 
+    padding: 20px;
     border-radius: 5px;
     border: 3px solid black;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    height: 300px; 
+}
+
+.card .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 150px; /* Altura fija para el contenedor de imagen */
+    overflow: hidden; /* Ocultar el exceso de imagen */
+}
+
+.card img {
+    width: auto;
+    height: 100%; /* Asegurar que la imagen llene el contenedor */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .card-container--info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container--value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.card-container--value p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.delete-button img {
+    width: 30px;
+    height: 30px;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Nuevos estilos para el header */
@@ -25,6 +88,7 @@
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 /* Disposición principal */
@@ -34,9 +98,16 @@
     padding: 20px;
 }
 
-/* Estilos para la sección de agregar productos */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
 .add-product-section {
-    width: 35%;
+    width: 300px; /* Fija el ancho del formulario */
+    flex-shrink: 0; /* Prevenir que el formulario se haga más pequeño */
 }
 
 /* Estilos mejorados para el formulario */
@@ -48,7 +119,7 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Press Start 2P', cursive; /* Asegúrate de incluir la fuente en tu HTML */
+    font-family: 'Press Start 2P', cursive; 
 }
 
 .form-container input {
@@ -102,3 +173,40 @@
 .button-clear:hover {
     background-color: #e6e6e6;
 }
+
+/* Nuevos estilos para el footer */
+.footer-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-section, .add-product-section {
+        width: 100%;
+    }
+
+    .add-product-section {
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
+
+
