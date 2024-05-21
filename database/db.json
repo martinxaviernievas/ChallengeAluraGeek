@@ -35,6 +35,12 @@
       "name": "Han Solo",
       "price": "15",
       "image": "https://http2.mlstatic.com/D_NQ_NP_977487-MLA49193911123_022022-O.webp"
+    },
+    {
+      "name": "Rose",
+      "price": "5",
+      "image": "https://wabro.vteximg.com.br/arquivos/ids/175300-1000-1000/771021-MLA40099814547_122019-F.jpg?v=637414265893130000",
+      "id": "11"
     }
   ]
 }
