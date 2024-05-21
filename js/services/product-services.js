@@ -27,7 +27,7 @@ const createProducts = (name, price, image, id) => {
 };
 
 const deleteProduct = (id) => {
-    return fetch(`https://fake-api-amber.vercel.app/products${id}`, {
+    return fetch(`https://fake-api-amber.vercel.app/products${"id"}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",
