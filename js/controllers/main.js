@@ -1,3 +1,5 @@
+// main.js
+
 import { servicesProducts } from "../services/product-services.js";
 
 const productContainer = document.querySelector("[data-product]");
@@ -30,7 +32,7 @@ function createCard(name, price, image, id) {
             console.log(`Producto con id ${id} eliminado.`);
             card.remove(); // Remove the card from the DOM
         } catch (error) {
-            console.log(`Error al eliminar el producto con id ${id}:`, error);
+            console.error(`Error al eliminar el producto con id ${id}:`, error);
         }
     });
 
@@ -53,7 +55,7 @@ const render = async () => {
             );
         });
     } catch (error) {
-        console.log(error);
+        console.error("Error al cargar los productos:", error);
     }
 };
 
@@ -73,9 +75,8 @@ form.addEventListener("submit", async (event) => {
         console.log(`Producto con id ${newId} creado.`);
         createCard(name, price, image, newId);  // Update the UI immediately
     } catch (error) {
-        console.log(`Error al crear el producto con id ${newId}:`, error);
+        console.error(`Error al crear el producto con id ${newId}:`, error);
     }
 });
 
 render();
-
