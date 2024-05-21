@@ -14,7 +14,7 @@ const createProducts = (name, price, image, id) => {
             name,
             price,
             image,
-            id: `"${id}"`,
+            id: `${id}`,
         }),
     })
     .then((res) => {
