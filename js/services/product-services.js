@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch("http://localhost:3000/products")
+    return fetch("https://fake-api-amber.vercel.app/products")
         .then((res) => res.json())
         .catch((err) => console.log(err));
 };
 
 const createProducts = (name, price, image, id) => {
-    return fetch("http://localhost:3000/products", {
+    return fetch("https://fake-api-amber.vercel.app/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -27,7 +27,7 @@ const createProducts = (name, price, image, id) => {
 };
 
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://fake-api-amber.vercel.app/products${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",
